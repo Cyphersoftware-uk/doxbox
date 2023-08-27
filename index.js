@@ -6,13 +6,17 @@ const app = express();
 
 app.set('view engine', 'ejs');
 
-app.get('/gen', (req, res) => {
-    var name = req.query.name;
+const self_url = 'https://doxbox.cc';
+
+
+app.get('/public', (req, res) => {
+    var name = req.url.split('?')[1];
     fs.readFile(path.join(__dirname, '/presets/smallcock.txt'), 'utf-8', (err, data) => {
         if (err) {
             return res.status(500).send('Error reading the file.');
         }
-        res.render('codebox', { content: data.replace('{DiscordName}', name) });
+        let result = data.replace('{DiscordName}', name);
+        res.render('codebox', { name: name, content: result });
     });
 });
 
