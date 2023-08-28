@@ -12,26 +12,21 @@
  '----------------'  '----------------'  '----------------'  '----------------'  '----------------'  '----------------' 
 
 
-Reason : Has a Small Cock
+Reason : {Reason}
 
 ### DETAILS ###
 Discord : {DiscordName}
 
-Name : King Nobless the Third
-Age : 0 - 100
-Dick Size : -4cm
+Name : {GenericName}
+Age : {Age}
 
-Mother : She is nice women
-Father : He is nice man
+Mother : {FemaleName}
+Father : {MaleName}
 
 Home : Somewhere located between the north pole and the south poll
 
 Exact Address :
-1337 Leet Road
-Leetville
-United Nations of the earth
-Mars
-Milky-way
+{Address}
 
 
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
